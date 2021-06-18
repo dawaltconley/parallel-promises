@@ -1,0 +1,29 @@
+{
+  "name": "@dawaltconley/max-async",
+  "version": "0.1.0",
+  "description": "A simple function for executing some maximum number of async tasks in parallel.",
+  "main": "parallel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dawaltconley/parallel-promises.git"
+  },
+  "keywords": [
+    "async",
+    "promises",
+    "parallel",
+    "maximum",
+    "limit"
+  ],
+  "author": "Dylan Awalt-Conley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dawaltconley/parallel-promises/issues"
+  },
+  "homepage": "https://github.com/dawaltconley/parallel-promises#readme",
+  "devDependencies": {
+    "eslint": "^7.28.0"
+  }
+}
