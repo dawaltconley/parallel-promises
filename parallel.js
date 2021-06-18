@@ -2,8 +2,8 @@ module.exports = async (tasks, n) => {
     const queue = tasks;
     const results = [];
     const executing = [];
-    while (queue.length) {
-        if (executing.length < n) {
+    while (queue.length || executing.length) {
+        if (queue.length && executing.length < n) {
             let task = queue.shift();
             task = task().then(r => {
                 const i = executing.indexOf(task);
