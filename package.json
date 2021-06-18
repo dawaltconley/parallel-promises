@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "description": "A simple function for executing some maximum number of async tasks in parallel.",
   "main": "parallel.js",
+  "files": [
+      "/parallel.js"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test",
+    "prepublishOnly": "node test"
   },
   "repository": {
     "type": "git",
