@@ -1,7 +1,7 @@
 module.exports = async (tasks, n) => {
-    queue = tasks;
-    results = [];
-    executing = [];
+    const queue = tasks;
+    const results = [];
+    const executing = [];
     while (queue.length) {
         if (executing.length < n) {
             let task = queue.shift();
@@ -9,7 +9,7 @@ module.exports = async (tasks, n) => {
                 const i = executing.indexOf(task);
                 executing.splice(i, 1);
                 return r;
-            })
+            });
             executing.push(task);
         } else {
             const next = await Promise.race(executing);
@@ -17,4 +17,4 @@ module.exports = async (tasks, n) => {
         }
     }
     return results;
-}
+};
