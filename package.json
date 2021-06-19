@@ -1,6 +1,6 @@
 {
   "name": "@dawaltconley/max-async",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple function for executing some maximum number of async tasks in parallel.",
   "main": "parallel.js",
   "files": [
