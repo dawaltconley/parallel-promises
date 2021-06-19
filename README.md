@@ -21,4 +21,4 @@ maxAsync(tasks, 4) // execute all tasks, maximum 4 at a time
     });
 ```
 
-The function returns flat array of all async task results, similar to `Promise.all`, except the order returned is the order in which the tasks finished executing. 
+The function returns a flat array of all async task results, similar to `Promise.all`. The index of each result matches the index of its function in the input array.
