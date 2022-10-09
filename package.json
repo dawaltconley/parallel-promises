@@ -4,7 +4,7 @@
   "description": "A simple function for executing some maximum number of async tasks in parallel.",
   "main": "parallel.js",
   "files": [
-      "/parallel.js"
+    "/parallel.js"
   ],
   "scripts": {
     "test": "node test",
@@ -29,5 +29,8 @@
   "homepage": "https://github.com/dawaltconley/parallel-promises#readme",
   "devDependencies": {
     "eslint": "^7.28.0"
+  },
+  "dependencies": {
+    "@types/node": "^18.8.3"
   }
 }
