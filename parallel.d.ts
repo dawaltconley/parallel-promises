@@ -1,3 +1,3 @@
-type AsyncFunction = (...args: any) => Promise<any>
+type AsyncFunction<T> = () => Promise<T>
 
-export default function maxAsync(tasks: AsyncFunction[], n: number): any[]
+export default function maxAsync<T>(tasks: AsyncFunction<T>[], n: number): Promise<T[]>
